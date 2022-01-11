@@ -107,7 +107,7 @@ public class Menu extends FileStream {
 				System.out.println("종료되었습니다.");
 				break;
 			default:
-				System.out.println("선택할 메뉴의 숫자를 입력해주세요");
+				System.out.println("선택할 메뉴의 숫자를 다시 입력해주세요");
 				break;
 		}
 	}
