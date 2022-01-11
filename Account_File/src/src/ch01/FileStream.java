@@ -9,9 +9,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileStream {
-	
-	private final String path = "C:\\Lee\\workspace\\account.txt";
-	private final String path2 = "C:\\Lee\\workspace\\account2.txt";
+	final static String REGEX = "[0-9]+";
+	private final String path = "D:\\work-space\\account.txt";
+	private final String path2 = "D:\\work-space\\account2.txt";
 	
 	public void writeText(String id, String password, int account, String name) {
 		try {
@@ -164,5 +164,16 @@ public class FileStream {
 		}
 		
 		return result;
+	}
+	//숫자만 받는지 확인하는 메서드
+	public int matchNum(String input) {
+		int num;
+		if(input.matches(REGEX)) {
+			num = Integer.parseInt(input);
+		}else {
+			System.out.println("숫자만 입력해주세요");		
+			num =-999;
+		}
+		return num;
 	}
 }

@@ -4,7 +4,7 @@ public class AccountTest {
 	public static void main(String[] args) {
 		Menu menu = new Menu();
 		
-		while(menu.getMode() != 8) {
+		while(menu.getMode() != 7) {
 			menu.SelectMenu();
 		}
 		
